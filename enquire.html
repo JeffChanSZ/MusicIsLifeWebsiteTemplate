@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- get header ('Page Name'. 'Title')-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Assignment 1" />
+		<meta name="author" content="ChanSiawZheng" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Enquiry</title>
+		<link rel="icon" href="images/logo.jfif" type="image/x-icon" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="styles/header-mobile.css" />
+		<link rel="stylesheet" href="styles/enquiry.css" />
+	</head>
+	
+	<body>
+	<header class="header">
+		<div class="nav-bar" id="myNavBar">
+	<p><a class="logo" href ="index.html">
+		<img src="images/logo.jfif" alt="Logo" />
+	</a>
+	</p>
+	<p>
+	<a href="index.html">Home</a>
+	<a href="product.html">Product</a>
+	<a href="enquire.html" class="active">Enquiry</a>
+	<a href="about.html">About Me</a>
+	<a href="enhancements.html" >Enhancements</a>
+	</p>
+</div>
+	</header><!--Header End-->
+	
+	<div class="directory">
+		<div class="container">
+			<a href="index.html">Home </a>/
+			<a href="enquire.html">Enquiry </a>
+		</div>
+	</div>
+	
+	<!--contact us section -->
+	<section class="profile">
+		<div class="container">
+
+			<p><a class="logo" href ="index.html">
+				<img src="images/logo.jfif" alt="Logo" />
+			</a>
+			</p>
+			
+		<h2>Get in Touch!</h2>
+		<hr />
+			<form class="form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+				<fieldset>
+					<legend>Customer Details</legend>
+					<p><label for="txtbox-firstname">First Name</label> 
+					<input type="text" id="txtbox-firstname" name= "firstname" pattern="^[a-zA-Z]+$" maxlength="25" required="required" />
+					</p>
+					<p><label for="txtbox-lastname">Last Name</label>
+					<input type="text" id="txtbox-lastname" name= "lastname" pattern="^[a-zA-Z]+$" maxlength="25" required="required" />
+					</p>
+					<p><label class="txtbox-emai">Email</label>
+					<input type="email" class="txtbox-email" pattern="[a-z0-9._%]+@[a-z0-9-]+\[a-z]{2,3}$" 
+					placeholder="eg:101217869@swin.edu.au" size="50" required="required" />
+					</p>	
+				</fieldset>
+
+				<p>		
+				<fieldset>
+					<legend class="address">Address</legend> 
+					<p><label for="txtbox-address">Street Address</label>
+					<input type="text" id="txtbox-address" maxlength="40" required="required" />
+					</p>
+					<p><label for="txtbox-suburb">Suburb/Town</label>
+					<input type="text" id="txtbox-suburb" maxlength="20" required="required" />
+					</p>
+					<p><label for="formcontrol-state">State</label>
+					<select name="state" id="formcontrol-state" required="required" >
+					<option value="" selected="selected">Please Select</option>
+					<option value="VIC">VIC</option>
+					<option value="NSW">NSW</option>
+					<option value="QLD">QLD</option>
+					<option value="NT">NT</option>
+					<option value="WA">WA</option>
+					<option value="SA">SA</option>
+					<option value="TAS">TAS</option>
+					<option value="ACT">ACT</option>
+					<option value="other">Other</option>
+					</select>
+					</p>
+					<p><label for="txtbox-postcode">Postcode</label>
+					<input type="text" id="txtbox-postcode" pattern="\d*" maxlength="4" required="required" />	
+					</p>
+				</fieldset>
+				
+				
+				<p>
+				<fieldset>
+					<legend>Contact Details</legend>
+					<p><label for="phone">Phone Number</label>
+					<input type="text" id="phone" name="phoneno" placeholder="(+61)0401 037 123" 
+					pattern="\d*" maxlength="10" required="required" />
+					</p>
+					<p><label>Perferred Contact</label></p>
+					<p><label class="contact">					
+						<input type="radio" class="contact" name="preferredcontact" value="email" required="required"/> Email
+						</label><br>
+						<label class="contact">
+						<input type="radio" class="contact" name="preferredcontact" value="post" required="required"/> Post
+						</label><br>
+						<label class="contact">	
+						<input type="radio" class="contact" name="preferredcontact" value="phone" required="required"/> Phone
+						</label>
+						</p>
+					</fieldset>
+					<fieldset>
+					<legend>Product Details</legend>
+					<p><label for="formcontrol-product">Product</label>
+						<select id="formcontrol-product" name="product" required="required">
+						<option value="" selected="selected">Please select</option>
+						<optgroup label="Headphone Styles">
+						<option value="opt01" id="Hp1">Wireless On-Ear Headphones</option>
+						<option value="opt02" id="Hp2">Beats EP On-Ear Headphones</option>
+						<option value="opt03" id="Hp3">HX-HPEM02 Jamoji On-Ear Wired Headphones</option>
+						</optgroup>
+						
+						<optgroup label="Airpod Styles">
+						<option value="opt04" id="A1">Wireless Charging Case for AirPods</option>
+						<option value="opt05" id="A2">BlackPods New Generation 5.0</option>
+						<option value="opt06" id="A3">The New Wireless Bluetooth AirPlus</option>
+						</optgroup>
+						</select>
+
+						<p><label for="favcolor">Color Selection:</label>
+							<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+						  </p>
+					
+					<p><label class="product-features">Product Features</label>
+						<p>
+							<label><input type="checkbox" name="issue[]" value="Mode"  checked="checked"/>Mode</label><br>
+							<label><input type="checkbox" name="issue[]" value="Amps & DACs" />Amps & DACs</label><br>
+							<label><input type="checkbox" name="issue[]" value="Headset" />Headset</label><br>
+							<label><input type="checkbox" name="issue[]" value="Bag/ Cases" />Bag/ Cases</label><br>
+							<label><input type="checkbox" name="issue[]" value="Spare Parts/ Others" />Spare Parts/ Others</label><br>
+							
+							<p><label>Product Feature Details/ Specification</label>
+								<p><label class="comment">
+									<textarea class="txtbox-comment" name="comments" rows="10" cols="60" placeholder="Enter the specific Add-On Features."></textarea>
+								</label></p>
+						
+					</fieldset>
+					<fieldset>
+					<legend>Comment Section</legend>
+					<p><label>Comment Field</label>
+						<p><label class="comment">
+							<textarea class="txtbox-comment" name="comments" rows="10" cols="60" placeholder="Enter comments here."></textarea>
+						</label></p>	
+					</fieldset>
+				
+				<p>
+				<input type="submit" value="Submit" class="submit" />
+				</p>
+				
+			</form>
+		</div>
+	</section><!-- End contact us section -->
+	
+	
+	
+	<div class="parallax2"></div>
+	<!--Footer-->	
+	<footer class="footer">
+	<div class="row">
+		<div class="column">
+			<h3>Contact</h3>
+			<p>101217869@swin.edu.au</p>
+			<p>(+61)0401037123</p>
+			<p>Swinburne University of Technology Hawthorn Campus,
+			<br/>
+			<br />Melbourne Australia</p>
+			<div class="bottom-bar">
+     <p> 2020 Copyright © MusicIsLife Store. All Rights Reserved </p>
+	  </div>
+		</div>
+		
+		<div class="column">
+			<h3>Navigate</h3>
+				<ul class="footer-links">
+					<li><a href="product.html">Product</a></li>
+					<li><a href="enquire.html">Enquiry</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="enhancements.html">Enhancements</a></li>
+				</ul>
+		</div>
+		
+			<div class="column">
+			<h4>Connect</h4>
+			<a class="facebook" href="https://www.facebook.com">
+				<i class="fa fa-facebook-square"> </i>
+			</a>	
+			<a class="twitter" href="https://www.twitter.com">
+				<i class="fa fa-twitter-square"> </i>
+			</a>
+			<a class="instagram" href="https://www.instagram.com">
+				<i class="fa fa-instagram"> </i>
+			</a>
+			
+		</div>
+		
+		
+	
+		
+	  </div>
+	 </footer> <!-- End footer section -->	
+	</body> 
+	</html>
